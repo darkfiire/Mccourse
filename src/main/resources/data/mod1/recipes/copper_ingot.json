@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "",
+  "ingredients":
+  [
+    {"item": "mod1:copper_block" }
+  ],
+  "result":
+  {
+    "item": "mod1:copper_ingot",
+    "count": 9
+  },
+
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "mod1:copper_ore"
+  },
+  "result": "mod1:copper_ingot",
+  "experience": 5.0,
+  "cookingtime": 120
+
+}
+

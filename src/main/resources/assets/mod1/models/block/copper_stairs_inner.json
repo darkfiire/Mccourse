@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "mod1:block/copper_block",
+    "top": "mod1:block/copper_block",
+    "side": "mod1:block/copper_block"
+  }
+}

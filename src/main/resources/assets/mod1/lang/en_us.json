@@ -1,0 +1,21 @@
+{
+  "item.mod1.copper_ingot": "Copper Ingot",
+  "item.mod1.copper_wire": "Copper Wire",
+  "item.mod1.coppered_apple": "Coppered Apple",
+
+  "item.mod1.copper_shovel": "Copper Shovel",
+  "item.mod1.copper_sword": "Copper Sword",
+  "item.mod1.copper_pickaxe": "Copper Pick",
+  "item.mod1.copper_hoe": "Copper Hoe",
+  "item.mod1.copper_axe": "Copper Axe",
+
+  "item.mod1.copper_helmet": "Copper Helmet",
+   "item.mod1.copper_chestplate": "Copper Chestplate",
+  "item.mod1.copper_leggings": "Copper Leggings",
+   "item.mod1.copper_boots": "Copper Boots",
+
+  "block.mod1.copper_block": "Copper Block",
+  "block.mod1.copper_ore": "Copper Ore",
+
+  "itemGroup.CourseTab": "Mod tab"
+}
