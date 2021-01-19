@@ -9,6 +9,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.world.gen.feature.AbstractFeatureSizeType;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
@@ -46,6 +47,12 @@ public class ModBlocks
 
                      public static final RegistryObject<Block> COPPER_BUTTON =
               register("copper_button", () -> new StoneButtonBlock(AbstractBlock.Properties.create((Material.IRON) )));
+
+
+
+    public static final RegistryObject<Block> ZUCCINI_CROP =
+            Registration.BLOCKS.register("zuccini_crop",
+                    () -> new ZucciniCrop(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
 
 

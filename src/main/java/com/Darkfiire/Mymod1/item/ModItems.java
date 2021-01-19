@@ -1,6 +1,7 @@
 package com.Darkfiire.Mymod1.item;
 
 import com.Darkfiire.Mymod1.Mymod1;
+import com.Darkfiire.Mymod1.block.ModBlocks;
 import com.Darkfiire.Mymod1.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -86,6 +87,11 @@ public class ModItems
             Registration.ITEMS.register("copper_boots",
                     () -> new ArmorItem(ModArmourMaterial.COPPER, EquipmentSlotType.FEET,
                             new Item.Properties().group(Mymod1.COURSE_TAB)));
+
+
+    public static final RegistryObject<Item> ZUCCINI_SEED =
+            Registration.ITEMS.register("zuccini_seed",
+                    () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(), new Item.Properties().group(Mymod1.COURSE_TAB)));
 
 
 
