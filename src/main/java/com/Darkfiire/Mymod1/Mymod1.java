@@ -1,12 +1,15 @@
 package com.Darkfiire.Mymod1;
 
 import com.Darkfiire.Mymod1.block.ModBlocks;
+import com.Darkfiire.Mymod1.block.ModFluids;
 import com.Darkfiire.Mymod1.events.ModEvents;
 import com.Darkfiire.Mymod1.item.ModItems;
 import com.Darkfiire.Mymod1.util.Config;
 import com.Darkfiire.Mymod1.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -51,6 +54,7 @@ public class Mymod1
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register(new ModEvents());
 
@@ -80,8 +84,7 @@ public class Mymod1
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+        RenderTypeLookup.setRenderLayer(ModBlocks.ZUCCINI_CROP.get(), RenderType.getCutout());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
